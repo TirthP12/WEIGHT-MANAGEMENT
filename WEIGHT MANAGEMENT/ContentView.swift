@@ -19,6 +19,11 @@ struct ContentView: View {
                 fm.push(input, under: "data")
             }
             Text(output)
+            Button("Load") {
+                Task {
+                    output = await fm.pull(under: "data")
+                }
+            }
         }
         .padding()
     }
