@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var fm = FirebaseManager()
+    @State var input = ""
+    @State var output = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            TextField("Enter data", text: $input)
+            Button("Save") {
+                fm.push(input, under: "data")
+            }
+            Text(output)
         }
         .padding()
     }

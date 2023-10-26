@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		39CBBD322AE81E9D00B178B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39CBBD312AE81E9D00B178B7 /* GoogleService-Info.plist */; };
 		39CBBD352AE8214800B178B7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 39CBBD342AE8214800B178B7 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		39EB9C532AEAB84F00E583F7 /* Firebase Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB9C522AEAB84F00E583F7 /* Firebase Manager.swift */; };
+		39EB9C562AEABD1900E583F7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 39EB9C552AEABD1900E583F7 /* FirebaseDatabase */; };
+		39EB9C582AEABD1900E583F7 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 39EB9C572AEABD1900E583F7 /* FirebaseDatabaseSwift */; };
 		3E9BA3802AE817F700896403 /* WEIGHT_MANAGEMENTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BA37F2AE817F700896403 /* WEIGHT_MANAGEMENTApp.swift */; };
 		3E9BA3822AE817F700896403 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BA3812AE817F700896403 /* ContentView.swift */; };
 		3E9BA3842AE817F900896403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9BA3832AE817F900896403 /* Assets.xcassets */; };
@@ -37,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		39CBBD312AE81E9D00B178B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39EB9C522AEAB84F00E583F7 /* Firebase Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase Manager.swift"; sourceTree = "<group>"; };
 		3E9BA37C2AE817F700896403 /* WEIGHT MANAGEMENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WEIGHT MANAGEMENT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9BA37F2AE817F700896403 /* WEIGHT_MANAGEMENTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEIGHT_MANAGEMENTApp.swift; sourceTree = "<group>"; };
 		3E9BA3812AE817F700896403 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EB9C582AEABD1900E583F7 /* FirebaseDatabaseSwift in Frameworks */,
+				39EB9C562AEABD1900E583F7 /* FirebaseDatabase in Frameworks */,
 				39CBBD352AE8214800B178B7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +81,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39EB9C542AEABD1900E583F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E9BA3732AE817F700896403 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 				3E9BA38F2AE817F900896403 /* WEIGHT MANAGEMENTTests */,
 				3E9BA3992AE817F900896403 /* WEIGHT MANAGEMENTUITests */,
 				3E9BA37D2AE817F700896403 /* Products */,
+				39EB9C542AEABD1900E583F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3E9BA37F2AE817F700896403 /* WEIGHT_MANAGEMENTApp.swift */,
+				39EB9C522AEAB84F00E583F7 /* Firebase Manager.swift */,
 				3E9BA3812AE817F700896403 /* ContentView.swift */,
 				3E9BA3832AE817F900896403 /* Assets.xcassets */,
 				3E9BA3852AE817F900896403 /* Preview Content */,
@@ -150,6 +165,8 @@
 			name = "WEIGHT MANAGEMENT";
 			packageProductDependencies = (
 				39CBBD342AE8214800B178B7 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				39EB9C552AEABD1900E583F7 /* FirebaseDatabase */,
+				39EB9C572AEABD1900E583F7 /* FirebaseDatabaseSwift */,
 			);
 			productName = "WEIGHT MANAGEMENT";
 			productReference = 3E9BA37C2AE817F700896403 /* WEIGHT MANAGEMENT.app */;
@@ -271,6 +288,7 @@
 			files = (
 				3E9BA3822AE817F700896403 /* ContentView.swift in Sources */,
 				3E9BA3802AE817F700896403 /* WEIGHT_MANAGEMENTApp.swift in Sources */,
+				39EB9C532AEAB84F00E583F7 /* Firebase Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +630,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 39CBBD332AE8214800B178B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		39EB9C552AEABD1900E583F7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39CBBD332AE8214800B178B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		39EB9C572AEABD1900E583F7 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39CBBD332AE8214800B178B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
